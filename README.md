@@ -4,16 +4,16 @@ Week 1's Homework - Refactoring the Horiseon webpage
 ## Description
 This repository is the refactoring of code for an existing website to update it with accessibility standards. 
 
-The following was completed to meet the Acceptance Criteria of the refactor:
+The following was completed for the refactor:
 
-Source code was updated with semantic HTML elements.
-Source code was updated such that HTML elements follow a logical structure independent of styling and positioning.
-Image elements were updated with alt attributes
-Heading attributes were updated to fall in sequential order
-Title element was updated with a concise, descriptive title
-Application's links were updated to function correctly
-CSS selectors and properties were consolidated and organized to follow semantic structure
-CSS and HTML files were updated with comments
+* Source code was updated with semantic HTML elements.
+* Source code was updated such that HTML elements follow a logical structure independent of styling and positioning.
+* Image elements were updated with alt attributes
+* Heading attributes were updated to fall in sequential order
+* Title element was updated with a concise, descriptive title
+* Application's links were updated to function correctly
+* CSS selectors and properties were consolidated and organized to follow semantic structure
+* CSS and HTML files were updated with comments
 
 ## Mock-Up
 
