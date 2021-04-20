@@ -1,56 +1,70 @@
+/* Includes no padding or margins for all elements unless otherwise specified,
+and padding/border are included in the width and height of an element. Sets webpage font-family */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Set background color of page to an off-white */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Set header background color different from page and text to white with padding of 20px on all sides */
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
-    display: inline-block;
+/* Display brand name to 48px, with specified font-family, and display inline */
+h1, .seo {
+    display: inline;
     font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.header h1 .seo {
+/* Change color of 'seo' in brand name to a slight contrast with rest of brand name*/
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* Display navigation bar inline with and to the right of brand name in header.
+Change the font-size, and add specified padding and margin to navigation bar */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    display: inline;
 }
 
-.header div ul {
+/* Show no marker for list items in navigation bar */
+ul {
     list-style-type: none;
 }
 
-.header div ul li {
-    display: inline-block;
+/* Display navigation bar links in one row with specified margin for spacing */
+li {
+    display: inline;
     margin-left: 25px;
 }
 
+/* Links shown without underline and in white, even after clicked */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Set all paragraph elements to 16px unless otherwise specified */
 p {
     font-size: 16px;
 }
 
-.hero {
+/* Set a background image to be centered and cover the page */
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -59,142 +73,94 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-.content {
+/* Have the content section take up 75% of page width and display inline with 20px margin on left */
+.container {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* Float images to the left with a right margin of 25px */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Float images to the right with a left margin of 25px */
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* Style each content section with the same background color and text color.
+Each content section is the same height with specified margin and padding for uniform look */
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Bound the image in each content section to the same size, max height of 200px, for uniform look */
+.content img {
+    max-height: 200px;
+}
+
+/* Make content section headings larger with spacing below */
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* A sidebar listing the benefits of Horiseon that spans length of the page
+below the header and background image. Specified to take up 20% of the right side of the page.
+Margin and padding for spacing with other elements. Background color and text color specified.*/
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+/* Space out each benefit in sidebar with bottom margins */
+.benefit {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* Center each benefit header and add space below */
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Put image below benefit header with some spacing above and centered horizontally.
+Image cannot be larger than 150px*/
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* A centered footer that is below all page content with specified padding and font-family */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* Make footer header font size smaller */
+h4 {
     font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Make copyright same font-family as footer */
+#copyright {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
