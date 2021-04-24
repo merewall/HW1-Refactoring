@@ -71,6 +71,7 @@ figure {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    color: black;
 }
 
 /* Have the content section take up 75% of page width and display inline with 20px margin on left */
